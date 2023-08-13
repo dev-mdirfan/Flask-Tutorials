@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result | Score Checker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-800">
+    <h1 class="text-3xl font-bold text-white m-4">Final Results</h1>
+    <div class="bg-blue-500 text-white p-4 m-4">Welcome to final result!</div>
+    <center>
+        <table border="10" {% if exp.get('marks') < 50 %} class="p-5 border-4 border-red-500" {% set color='red' %} {%
+            else %} class="p-5 border-4 border-green-500" {% set color='green' %} {% endif %}>
+            {% for key, value in exp.items() %}
+            <tr>
+                <td class="bg-white p-5 border-2 border-{{color}}-500"><strong>{{ key.capitalize() }}:</strong></td>
+                <td class="bg-white p-5 border-2 border-{{color}}-500">{{ value }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+
+</html>

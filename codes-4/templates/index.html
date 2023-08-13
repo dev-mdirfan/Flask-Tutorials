@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Checker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body class="bg-slate-800">
+    <h1 class="text-3xl font-bold text-white m-4">Student Score Checker</h1>
+    <br>
+    <div class="bg-blue-500 text-white p-4 m-4">Welcome to Score Checker!</div>
+    <section class="">
+        <form action="/submit" method="POST" class="items-center space-x-6 m-10">
+            <label for="Science">
+                <span class="after:ml-0.5 after:text-red-500 block text-sm font-medium text-white">
+                    Science:
+                </span>
+                <input type="number" id="Science" name="Science" value="0" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 rounded-md sm:text-sm focus:ring-1 mb-4">
+            </label>
+            <label for="Maths">
+                <span class="after:ml-0.5 after:text-red-500 block text-sm font-medium text-white">
+                    Maths:
+                </span>
+                <input type="number" id="Maths" name="Maths" value="0" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 rounded-md sm:text-sm focus:ring-1 mb-4">
+            </label>
+            <label for="English">
+                <span class="after:ml-0.5 after:text-red-500 block text-sm font-medium text-white">
+                    English:
+                </span>
+                <input type="number" id="English" name="English" value="0" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 rounded-md sm:text-sm focus:ring-1 mb-4">
+            </label>
+            <label for="C">
+                <span class="after:ml-0.5 after:text-red-500 block text-sm font-medium text-white">
+                    C:
+                </span>
+                <input type="number" id="C" name="C" value="0" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 rounded-md sm:text-sm focus:ring-1 mb-4">
+            </label>
+            <label for="DataScience">
+                <span class="after:ml-0.5 after:text-red-500 block text-sm font-medium text-white">
+                    Data Science:
+                </span>
+                <input type="number" id="DataScience" value="0" name="DataScience" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 rounded-md sm:text-sm focus:ring-1 mb-4">
+            </label>
+            <button type="submit" class="p-2 rounded-full text-white bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">Submit Now</button>
+        </form>
+    </section>
+
+
+</body>
+</html>

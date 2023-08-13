@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Streaming</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-dark text-white">
+    <h1>Live Streaming</h1>
+    <hr class="bg-white">
+    <center>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8  offset-lg-2 border-dark shadow pb-5 bg-dark font-weight-bolder">
+                    <h3 class="mt-5">Live Streaming</h3>
+                    <img src="{{ url_for('video_feed') }}" width="50%">
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+</html>
