@@ -1,1 +1,0 @@
-# Codes - 7 - Face Recognition Using Webcam - Flask Tutorial | [code](codes-7/) | [docs](docs/codes-7.md)

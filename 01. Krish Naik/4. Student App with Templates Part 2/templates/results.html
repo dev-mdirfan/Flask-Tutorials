@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result | Score Checker</title>
+</head>
+<body>
+    <h2>Final Results:</h2>
+
+    <hr>
+    <!-- First Way: Using Jinja Conditional -->
+    {% if exp.get('marks') < 50 %}
+        <h4 style="color: red;">The person has Failed and the Result is {{ exp.get('marks') }}</h4>
+    {% else %}
+        <h4 style="color: green;">The person has Passed and the Result is {{ exp.get('marks') }}</h4>
+    {% endif %}
+    
+    <!-- Second Way: Using Jinja Loop -->
+    {% for key, value in exp.items() %}
+        <h4>{{ key.capitalize() }}: {{ value }}</h4>
+    {% endfor %}
+    
+    <!-- Third Way: Using Jinja Conditional and Loop -->
+    <!-- Alternate Way -->
+    <center>
+        <table border="10" {% if exp.get('marks') < 50 %} style="padding: 5px; border: 10px solid red;" {% else %} style="padding: 5px; border: 10px solid green;" {% endif %}>
+            {% for key, value in exp.items() %}
+            <tr>
+                {# This is comment section #}
+                <td style="padding: 5px;"><strong>{{ key.capitalize() }}:</strong></td>
+                <td style="padding: 5px;">{{ value }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
