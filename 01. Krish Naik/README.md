@@ -79,17 +79,3 @@ python app.py
 3. [3. Student App with Templates](3.%20Student%20App%20with%20Templates/)
 4. [4. Student App with Templates Part 2](4.%20Student%20App%20with%20Templates%20Part%202/)
 5. [5. Student App Adding HTML CSS](5.%20Student%20App%20Adding%20HTML%20CSS/)
-
-## Codes
-1. Static Files and Request Object - [Code](codes-4/) | [Docs](docs/codes-4.md)
-2. Video Streaming Using Webcam - [Code](codes-5/) | [Docs](docs/codes-5.md)
-3. OpenCV Face and Eye Detection - [Code](codes-6/) | [Docs](docs/codes-6.md)
-4. Face Recognition Using Webcam - [Code](codes-7/) | [Docs](docs/codes-7.md)
-
-
-
-
-
-
-
-
