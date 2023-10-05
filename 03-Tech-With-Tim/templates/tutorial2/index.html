@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Tutorial 2</title>
+</head>
+<body>
+    <h1>Home Page</h1>
+    <p>Hello {{ name }}</p>
+
+    <!-- Python Looping -->
+    {% for x in range(10) %}
+        {% if x % 2 == 1 %}
+            <p>{{ x }}</p>
+        {% else %}
+            <p style="color: red;">{{ x }}</p>
+        {% endif %}
+    {% endfor %}
+
+    <!-- Another Python Looping -->
+    {% for name in content %}
+        <p>{{ name }}</p>
+    {% endfor %}
+</body>
+</html>
